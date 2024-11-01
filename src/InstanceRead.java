@@ -5,27 +5,29 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class InstanceRead {
+    private int supportedWeight = 0;
+    private int quantityItems = 0;
+    private ArrayList<Item> items = null; // [Nome do elemento, Peso do elemento, Benefício do elemento]
 
     public void readFile(String path){
-        File file = new File(path);
+        File file = new File(path); // Criando o objeto pra identificar o arquivo com os dados
         Scanner scanner = null;
-        ArrayList<String> items = new ArrayList<String>(); // [Nome do elemento, Peso do elemento, Benefício do elemento]
 
         try {
-            scanner = new Scanner(file);
+            items = new ArrayList<Item>(); // Criando o array que armazenará os itens
+            scanner = new Scanner(file); // Criando o objeto pra ler o arquivo
 
-            // Peso suportado pela mochila
-            String supported_weight_str = scanner.nextLine();
-            int supported_weight = Integer.parseInt(supported_weight_str);
+            // 1a linha - Peso suportado pela mochila
+            supportedWeight = Integer.parseInt(scanner.nextLine());
 
-            // Quantidade de itens disponíveis
-            String quantity_items_str = scanner.nextLine();
-            int quantity_items = Integer.parseInt(quantity_items_str);
+            // 2a linha - Quantidade de itens disponíveis
+            quantityItems = Integer.parseInt(scanner.nextLine());
 
-            // Iterando sobre os itens disponíveis
+            // Iterando sobre os itens disponíveis - [Nome, Peso, Benefício]
             while (scanner.hasNextLine()) {
-                String item = Arrays.toString(scanner.nextLine().strip().split(","));
-                items.add(item);
+                String[] element = scanner.nextLine().strip().split(","); // Pega a linha do arquivo (String única) e transforma em um array com os atributos do item e insere no array de Strings element
+                Item item = new Item(element[0], Integer.parseInt(element[1]), Integer.parseInt(element[2])); // Instancia um novo objeto da classe Item usando os elementos(atributos) do array element
+                items.add(item); // adiciona o objeto da classe Item no ArrayList dos Itens
             }
 
         // Exceção lançada caso o caminho passado como argumento não exista
@@ -39,5 +41,17 @@ public class InstanceRead {
             }
         }
 
+    }
+
+    public int getSupportedWeight() {
+        return supportedWeight;
+    }
+
+    public int getQuantityItems() {
+        return quantityItems;
+    }
+
+    public ArrayList<Item> getItems() {
+        return items;
     }
 }
