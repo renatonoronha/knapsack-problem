@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2ab1dcb-ef98-448d-bd0c-0b5aa3533302" name="Changes" comment="realizando a leitura das instancias">
+    <list default="true" id="e2ab1dcb-ef98-448d-bd0c-0b5aa3533302" name="Changes" comment="atualizando a leitura das instancias">
       <change afterPath="$PROJECT_DIR$/src/PopulationGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InstanceRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InstanceRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +75,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730315020214</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="atualizando a leitura das instancias">
+      <option name="closed" value="true" />
+      <created>1730498140455</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730498140455</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,6 +101,7 @@
     <MESSAGE value="commit inicial" />
     <MESSAGE value="adicionando as instancias da mochila" />
     <MESSAGE value="realizando a leitura das instancias" />
-    <option name="LAST_COMMIT_MESSAGE" value="realizando a leitura das instancias" />
+    <MESSAGE value="atualizando a leitura das instancias" />
+    <option name="LAST_COMMIT_MESSAGE" value="atualizando a leitura das instancias" />
   </component>
 </project>

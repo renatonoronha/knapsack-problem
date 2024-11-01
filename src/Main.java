@@ -3,12 +3,14 @@ public class Main {
         InstanceRead instanceRead = new InstanceRead();
         instanceRead.readFile("data/instancias-mochila/KNAPDATA40.txt");
 
-        for (Item item : instanceRead.getItems()) {
-            System.out.println("Name:" + item.getName());
-            System.out.println("Vaue:" + item.getValue());
-            System.out.println("Weight:" + item.getWeight());
+        PopulationGenerator populationGenerator = new PopulationGenerator();
+        populationGenerator.generatePopulation(instanceRead.getItems(), instanceRead.getQuantityItems());
+        for (Item item : populationGenerator.getPopulation()){
+            System.out.println("Name: " + item.getName());
+            System.out.println("Weight: " + item.getWeight());
+            System.out.println("Value: " + item.getValue());
             System.out.println();
         }
-
+        System.out.println(populationGenerator.getPopulation());
     }
 }
