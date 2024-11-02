@@ -2,22 +2,17 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class PopulationGenerator {
-    ArrayList<Item> population = null;
 
-    public void generatePopulation(ArrayList<Item> availableItems, int populationSize){
-        population = new ArrayList<Item>();
+    public int[][] generatePopulation(int size, int populationSize){
+        int[][] population = new int[populationSize][size]; // Gera um array bidimensional, populationSize representa o tamanho da população de soluções e size representa o número de cromossomos de cada solução (o número de itens totais, contando os que você vai levar e os que não vai levar)
         Random random = new Random();
 
-        for (int i=0; i < populationSize; i++){
-            Item item = availableItems.get(i);
-            int isSelected = random.nextInt(2); // Gera 0 ou 1 (não selecionado ou selecionado)
-            if (isSelected == 1){
-                population.add(item);
+        for (int i=0; i < populationSize; i++){ // Iterando sobre o número da população de soluções
+            for (int j=0; j < size; j++){ // Iterando sobre o número de itens da solução
+                population[i][j] = random.nextInt(2); // Gera 0 ou 1 (não selecionado ou selecionado)
             }
         }
-    }
-
-    public ArrayList<Item> getPopulation() {
         return population;
     }
+
 }

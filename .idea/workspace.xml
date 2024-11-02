@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2ab1dcb-ef98-448d-bd0c-0b5aa3533302" name="Changes" comment="atualizando a leitura das instancias">
-      <change afterPath="$PROJECT_DIR$/src/PopulationGenerator.java" afterDir="false" />
+    <list default="true" id="e2ab1dcb-ef98-448d-bd0c-0b5aa3533302" name="Changes" comment="adicionando a criacao de populacoes">
+      <change afterPath="$PROJECT_DIR$/src/CalculateFitness.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PopulationGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PopulationGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +84,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730498140455</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="adicionando a criacao de populacoes">
+      <option name="closed" value="true" />
+      <created>1730505348747</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730505348747</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,6 +111,7 @@
     <MESSAGE value="adicionando as instancias da mochila" />
     <MESSAGE value="realizando a leitura das instancias" />
     <MESSAGE value="atualizando a leitura das instancias" />
-    <option name="LAST_COMMIT_MESSAGE" value="atualizando a leitura das instancias" />
+    <MESSAGE value="adicionando a criacao de populacoes" />
+    <option name="LAST_COMMIT_MESSAGE" value="adicionando a criacao de populacoes" />
   </component>
 </project>
