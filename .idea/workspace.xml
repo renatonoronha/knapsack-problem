@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2ab1dcb-ef98-448d-bd0c-0b5aa3533302" name="Changes" comment="adicionando a criacao de populacoes">
+    <list default="true" id="e2ab1dcb-ef98-448d-bd0c-0b5aa3533302" name="Changes" comment="atualizando a criacao de populacoes">
       <change afterPath="$PROJECT_DIR$/src/CalculateFitness.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InstanceRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InstanceRead.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PopulationGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PopulationGenerator.java" afterDir="false" />
     </list>
@@ -34,15 +35,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -92,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730505348747</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="atualizando a criacao de populacoes">
+      <option name="closed" value="true" />
+      <created>1730549102221</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730549102221</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +121,7 @@
     <MESSAGE value="realizando a leitura das instancias" />
     <MESSAGE value="atualizando a leitura das instancias" />
     <MESSAGE value="adicionando a criacao de populacoes" />
-    <option name="LAST_COMMIT_MESSAGE" value="adicionando a criacao de populacoes" />
+    <MESSAGE value="atualizando a criacao de populacoes" />
+    <option name="LAST_COMMIT_MESSAGE" value="atualizando a criacao de populacoes" />
   </component>
 </project>
