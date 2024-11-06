@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class CalculateFitness {
 
     public double evaluateFitness(int[] solution, Item[] items, int capacity){
