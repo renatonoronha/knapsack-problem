@@ -49,8 +49,9 @@ public class Operations {
         return population[selectedIdx]; // retorna a solução selecionada
     }
 
-    public int[][] crossover(int[] parent1, int[] parent2, double crossoverRate){
-        int[][] offspring = new int[2][parent1.length]; // filhos
+    // Esse método possui um problema: se não cruzar vai retornar um array zerado completamente
+    public int[] crossover(int[] parent1, int[] parent2, double crossoverRate){
+        int[] offspring = new int[parent1.length]; // filho
 
         if (random.nextDouble() < crossoverRate){ //nextDouble() vai gerar um número entre 0 e 1
             int crossoverPoint = random.nextInt(parent1.length); // gera o ponto de cruzamento
@@ -58,19 +59,15 @@ public class Operations {
             for (int i=0; i<parent1.length; i++){
 
                 if (i<crossoverPoint){ // a primeira metade dos genes
-                    offspring[0][i] = parent1[i];
-                    offspring[1][i] = parent2[i];
+                    offspring[i] = parent1[i];
+
                 } else { // a segunda metade dos genes
-                    offspring[0][i] = parent2[i];
-                    offspring[1][i] = parent1[i];
+                    offspring[i] = parent2[i];
                 }
             }
-        } else { // se não cruzarem retorna os pais
-            offspring[0] = parent1;
-            offspring[1] = parent2;
         }
 
-        return offspring; // retorna os filhos gerados após a probabilidade de cruzamento ser aplicada
+        return offspring; // retorna o filho gerado após a probabilidade de cruzamento ser aplicada
     }
 
     public int[] mutate(int[] solution, double mutationRate){
