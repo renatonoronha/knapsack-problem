@@ -1,8 +1,12 @@
+package utils;
+
+import model.Item;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class InstanceRead {
+public class InstanceReader {
     private int supportedWeight = 0;
     private int quantityItems = 0;
     private Item[] items = null; // [Nome do elemento, Peso do elemento, Benefício do elemento]
@@ -26,8 +30,8 @@ public class InstanceRead {
             // Iterando sobre os itens disponíveis - [Nome, Peso, Benefício]
             for (int i=0; i < quantityItems; i++){
                 String[] element = scanner.nextLine().strip().split(","); // Pega a linha do arquivo (String única) e transforma em um array com os atributos do item e insere no array de Strings element
-                Item item = new Item(element[0], Integer.parseInt(element[1]), Integer.parseInt(element[2])); // Instancia um novo objeto da classe Item usando os elementos(atributos) do array element
-                items[i] = item; // adiciona o objeto da classe Item no Array dos Itens
+                Item item = new Item(element[0], Integer.parseInt(element[1]), Integer.parseInt(element[2])); // Instancia um novo objeto da classe model.Item usando os elementos(atributos) do array element
+                items[i] = item; // adiciona o objeto da classe model.Item no Array dos Itens
             }
 
         // Exceção lançada caso o caminho passado como argumento não exista

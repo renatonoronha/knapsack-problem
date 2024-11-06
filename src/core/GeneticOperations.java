@@ -1,7 +1,11 @@
+package core;
+
+import model.Item;
+
 import java.util.Random;
 
-public class Operations {
-    CalculateFitness calculateFitness = new CalculateFitness();
+public class GeneticOperations {
+    Fitness fitness = new Fitness();
     Random random = new Random();
 
     public int[]  tournamentSelection(int[][] population, Item[] items, int capacity){
@@ -11,7 +15,7 @@ public class Operations {
 
         for (int i=0; i < tournamentSize; i++){
             int[] solution = population[random.nextInt(population.length)]; // seleciona uma solução aleatória da população
-            double fitness = calculateFitness.evaluateFitness(solution, items, capacity); // calcula a fitness da solução
+            double fitness = this.fitness.evaluateFitness(solution, items, capacity); // calcula a fitness da solução, this.fitness se refere ao objeto da classe Fitness
             if (fitness > bestFitness){ // se a fitness atual for melhor do que a solução anterior; a soluções estão lutando entre si pra ver qual é a melhor
                 bestSolution = solution;
                 bestFitness = fitness;
@@ -26,7 +30,7 @@ public class Operations {
         int selectedIdx = -1; // índice da solução que será selecionada na seleção
 
         for (int i = 0; i < population.length; i++) {
-            double fitness = calculateFitness.evaluateFitness(population[i], items, capacity); // calcula a fitness de cada solução
+            double fitness = this.fitness.evaluateFitness(population[i], items, capacity); // calcula a fitness de cada solução, this.fitness se refere ao objeto da classe Fitness
             totalFitness += fitness; // soma todas as fitnesses
             cumulativeFitness[i] = totalFitness; // adiciona o total atual a posição atual do vetor, esses valores serão considerados as chances da solução ser escolhida
         }

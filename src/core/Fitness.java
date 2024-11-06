@@ -1,4 +1,8 @@
-public class CalculateFitness {
+package core;
+
+import model.Item;
+
+public class Fitness {
 
     public double evaluateFitness(int[] solution, Item[] items, int capacity){
 
