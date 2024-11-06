@@ -5,8 +5,8 @@ import model.Item;
 import java.util.Random;
 
 public class GeneticOperations {
-    Fitness fitness = new Fitness();
-    Random random = new Random();
+    private final Fitness fitness = new Fitness();
+    private final Random random = new Random();
 
     public int[]  tournamentSelection(int[][] population, Item[] items, int capacity){
         int tournamentSize = 5; // tamanho do torneio

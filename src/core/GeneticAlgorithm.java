@@ -4,9 +4,9 @@ import model.Item;
 
 public class GeneticAlgorithm {
 
-    Population population = new Population();
-    GeneticOperations geneticOperations = new GeneticOperations();
-    Fitness fitness = new Fitness();
+    private final Population population = new Population();
+    private final GeneticOperations geneticOperations = new GeneticOperations();
+    private final Fitness fitness = new Fitness();
 
     // Função para implementar o algoritmo genético para o problema da mochila
     public int[] runKnapsack(Item[] items, int capacity, int populationSize,
